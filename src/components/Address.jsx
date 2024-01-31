@@ -1,5 +1,4 @@
-// src/components/Address.js
-// import React from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { updateAddress } from '../redux/formSlice';
@@ -22,19 +21,19 @@ const Address = ({ onNext }) => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto bg-gray-100 p-6 rounded-md ">
       <div className="mb-4">
-        <label htmlFor="street" className="block text-sm font-medium text-gray-600">
+        <label className="block text-sm font-medium text-gray-600">
           Street:
         </label>
         <input {...register('street', { required: true })} className="mt-1 p-2 w-full border rounded-md text-black" />
       </div>
       <div className="mb-4">
-        <label htmlFor="city" className="block text-sm font-medium text-gray-600">
+        <label className="block text-sm font-medium text-gray-600">
           City:
         </label>
         <input {...register('city', { required: true })} className="mt-1 p-2 w-full border rounded-md text-black" />
       </div>
       <div className="mb-4">
-        <label htmlFor="zipCode" className="block text-sm font-medium text-gray-600 ">
+        <label className="block text-sm font-medium text-gray-600 ">
           Zip Code:
         </label>
         <input

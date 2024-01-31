@@ -1,7 +1,7 @@
-// src/components/Result.js
 import React from 'react';
 
 const Result = ({ formData }) => {
+  console.log(formData);
   const { personalDetails, address, paymentDetails } = formData;
 
   return (
@@ -14,7 +14,7 @@ const Result = ({ formData }) => {
           {Object.entries(personalDetails).map(([key, value]) => (
             <p key={key} className="mb-2">
               <strong>{key}:</strong> {value}
-            </p>
+            </p>   
           ))}
         </div>
       </div>

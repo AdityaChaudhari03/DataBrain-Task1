@@ -1,4 +1,3 @@
-// src/components/StepForm.js
 import React, { useState } from 'react';
 import PersonalDetails from './PersonalDetails';
 import Address from './Address';

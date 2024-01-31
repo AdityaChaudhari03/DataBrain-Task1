@@ -7,7 +7,7 @@ import StepForm from './components/StepForm';
 function App() {
   return (
     <Provider store={store}>
-      <div className="">
+      <div>
         <StepForm />
       </div>
     </Provider>

@@ -1,5 +1,4 @@
-// src/components/PersonalDetails.js
-// import React from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { updatePersonalDetails } from '../redux/formSlice';
@@ -23,7 +22,7 @@ const PersonalDetails = ({ onNext }) => {
           <label className='block text-sm font-medium text-gray-700'>Name:</label>
           <input
             {...register('name', { required: true })}
-            className=' mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300 text-black'
+            className=' mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300 text-black' placeholder='Enter Your Name'
           />
         </div>
         <div>
@@ -31,6 +30,7 @@ const PersonalDetails = ({ onNext }) => {
           <input
             {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
             className='mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-blue-300 text-black'
+            placeholder='Enter Your Email'
           />
         </div>
         <button
